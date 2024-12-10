@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for student in photos%}
+<ul>
+    <li><h1>{{post.id}}</h1></li>
+    <li><h1>{{post.name}}</h1></li>
+    <li><h1>{{post.email}}</h1></li>
+    <li><h1>{{post.enrolled_at}}</h1></li>
+    <li><img src="{{post.photos.url}}"></li>
+</ul>
+
+{% endfor %}
+</body>
+</html>
